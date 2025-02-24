@@ -1,0 +1,28 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "description": "a full set up of backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "athulcoder",
+    "javascript",
+    "react",
+    "express",
+    "mongoDB",
+    "mongoose"
+  ],
+  "author": "athulcoder",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "sample-project": "file:"
+  }
+}
