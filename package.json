@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a full set up of backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon ./src/index.js"
   },
