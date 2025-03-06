@@ -18,3 +18,10 @@ connectDB()
 app.get("/", (req, res) => {
   res.send("<h1>Home page </h1>");
 });
+
+app.use((req, res, next) => {
+  if (true) next();
+});
+app.get("/login", (req, res) => {
+  res.send("<h1>login</h1>");
+});
