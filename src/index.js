@@ -4,8 +4,17 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-connectDB();
+let PORT = process.env.PORT || 8080;
+connectDB()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server is listening on : ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log("MONGODB connection failed !!!", error);
+  });
 
-app.listen(3000, () => {
-  console.log("app is listening on port ", process.env.PORT);
+app.get("/", (req, res) => {
+  res.send("<h1>Home page </h1>");
 });
