@@ -25,3 +25,9 @@ app.use((req, res, next) => {
 app.get("/login", (req, res) => {
   res.send("<h1>login</h1>");
 });
+app.get("/signup", (req, res) => {
+  res.send("<h1> Sign up page ");
+});
+app.get("/profile", (req, res) => {
+  res.send("<h2>profile page </h2>");
+});
