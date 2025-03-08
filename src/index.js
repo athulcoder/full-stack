@@ -12,7 +12,7 @@ connectDB()
     });
   })
   .catch((error) => {
-    console.log("MONGODB connection failed !!!", error);
+    console.log("MONGODB connection failed!!", error);
   });
 
 app.get("/", (req, res) => {
