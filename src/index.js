@@ -23,6 +23,7 @@ app.use((req, res, next) => {
   if (true) next();
 });
 app.get("/login", (req, res) => {
+  printEmployee();
   res.send("<h1>login</h1>");
 });
 app.get("/signup", (req, res) => {
@@ -31,3 +32,5 @@ app.get("/signup", (req, res) => {
 app.get("/profile", (req, res) => {
   res.send("<h2>profile page </h2>");
 });
+
+const printEmployee = () => {};
